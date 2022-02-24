@@ -27,13 +27,13 @@ const assetCache = {
 
 module.exports = new Router()
   .match('/', ({ cache }) => {
-    cache(pageCache)
+    cache(assetCache)
   })
   .match('/why', ({ cache }) => {
-    cache(pageCache)
+    cache(assetCache)
   })
   .match('/example', ({ cache }) => {
-    cache(pageCache)
+    cache(assetCache)
   })
   .match('/styles/:file', ({ cache, serveStatic }) => {
     cache(assetCache)
