@@ -14,7 +14,7 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 14
           cache: 'pnpm'
       - run: pnpm install
       - run: pnpm edgio:deploy --token=$EDGIO_DEPLOY_TOKEN
