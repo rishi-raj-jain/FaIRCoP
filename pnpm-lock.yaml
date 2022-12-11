@@ -8,6 +8,7 @@ specifiers:
   '@edgio/devtools': ^6.0.1
   '@edgio/prefetch': ^6.0.1
   astro: ^1.6.14
+  cheerio: 1.0.0-rc.12
   globby: ^13.1.2
   html-minifier: ^4.0.0
   prettier: ^2.8.0
@@ -24,6 +25,7 @@ devDependencies:
   '@edgio/core': 6.0.1
   '@edgio/devtools': 6.0.1_@edgio+prefetch@6.0.1
   '@edgio/prefetch': 6.0.1_@edgio+devtools@6.0.1
+  cheerio: 1.0.0-rc.12
   globby: 13.1.2
   html-minifier: 4.0.0
   prettier: 2.8.1
