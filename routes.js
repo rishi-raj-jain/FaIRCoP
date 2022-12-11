@@ -1,9 +1,11 @@
-// This file was automatically added by edgio deploy.
-// You should commit this file to source control.
-import { Router } from '@edgio/core'
-import { astroRoutes } from '@edgio/astro'
+import { Router } from '@edgio/core/router'
 
-export default new Router()
-  // Prevent search engines from indexing permalink URLs
-  .noIndexPermalink()
-  .use(astroRoutes)
+module.exports = new Router().static('dist', {
+  handler:
+    () =>
+    ({ cache }) => {
+      cache({
+        browser: false,
+      })
+    },
+})

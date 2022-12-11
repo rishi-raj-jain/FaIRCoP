@@ -1,3 +1,3 @@
 module.exports = {
-  connector: '@edgio/astro',
+  connector: './edgio',
 }

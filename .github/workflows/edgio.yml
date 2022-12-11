@@ -27,6 +27,8 @@ jobs:
         run: npm list
       - name: Install dependencies
         run: npm install
+      - name: Build with Astro
+        run: npm run build
       - name: Deploy To Edgio
         run: npm run edgio:deploy -- --token=$EDGIO_DEPLOY_TOKEN
         env:
